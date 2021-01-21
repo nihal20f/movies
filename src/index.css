@@ -5,9 +5,140 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color:#e0d7d7;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container
+{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 50px;
+  align-content: center;
+  
+
+}
+small{
+  font-size: 1.2rem;
+}
+p{
+  font-size: 1.6rem;
+}
+
+
+
+
+.t{
+  text-align: center;
+  font-size: 4rem;
+}
+.form{
+  display: grid;
+}
+.label{
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+.input{
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid#ddd;
+  margin-bottom:1rem;
+
+}
+.button{
+  background-color:#261f1f;
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0,0,0,0,0.75);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250px;
+  
+}
+.button:hover{
+  background-color:  rgba(0,0,0,0,0.85);
+}
+@media (min-width:980px){
+  .form{
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .input{
+    margin-bottom: 0;
+  }
+}
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 900px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  
+  }
+
+
+
+
+
+
+
+.card-list{
+  margin-top: 4rem;
+}
+
+.card{
+
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0,0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  width:100%;
+  display: flex;
+
+  
+ 
+
+}
+
+.card--title{
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  
+}
+
+.card--image{
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card--content1{
+  flex: 30%;
+  padding: 10px;
+  margin-left: 10px;
+  
+  margin-bottom: 30px;
+  
+}
+.card--content1{
+  flex: 70%;
+  padding: 5px;
+  
+  
+
+}
+.card--desc{
+
+  font-size: 1rem;
+
 }
